@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 header {
   height: 80px;
   background-color: #373867;
@@ -38,6 +44,14 @@ ul li {
 aside h3 {
   font-size: 20px;
   font-weight: 700;
+}
+
+h1 {
+  color: #373867;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  width: 400px;
 }
 
 .search-icon {
@@ -88,4 +102,14 @@ aside h3 {
   width: 87px;
   height: 81px;
   object-fit: contain;
+}
+
+.splash-section img {
+  width: 852px;
+  height: 356px;
+}
+
+.splash-section h2, .splash-section p {
+  color: #423C3C;
+  font-weight: 700;
 }
