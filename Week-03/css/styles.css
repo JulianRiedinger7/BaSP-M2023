@@ -1,0 +1,91 @@
+header {
+  height: 80px;
+  background-color: #373867;
+}
+
+header p {
+  margin-top: 0;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+aside {
+  max-width: 320px;
+  padding: 10px 0;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+
+aside input {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 0px 10px 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+aside nav ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+aside h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.search-icon {
+  position: absolute;
+  left: 240px;
+  top: 100px;
+}
+
+.sidebar-btn-icon {
+  width: 44px;
+  height: 29px;
+  object-fit: contain;
+}
+
+.sidebar-btn {
+  width: 238px;
+  height: 49px;
+  padding: 10px 67px;
+  background-color: #AACE9B;
+  border: none;
+  border-radius: 10px;
+  color: #2A2A32;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 43px;
+}
+
+.sidebar-info-icon {
+  display: inline-block;
+}
+
+.sidebar-info-text {
+  display: inline-block;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: black;
+  font-weight: 600;
+  
+}
+
+.logo-radium {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 87px;
+  height: 81px;
+  object-fit: contain;
+}
