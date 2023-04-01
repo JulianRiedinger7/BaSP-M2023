@@ -5,6 +5,9 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  left: 0;
   height: 80px;
   background-color: #373867;
 }
@@ -19,11 +22,14 @@ header p {
 }
 
 aside {
+  position: fixed;
   max-width: 320px;
+  height: 100vh;
   padding: 10px 0;
   background-color: #F6F6F6;
   text-align: center;
 }
+
 
 aside input {
   display: inline-block;
@@ -46,18 +52,28 @@ aside h3 {
   font-weight: 700;
 }
 
+main, footer {
+  margin-left: 350px;
+  max-width: 1100px;
+}
+
+section {
+  min-height: 100vh;
+}
+
 h1 {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px 0;
   color: #373867;
-  text-align: center;
   font-weight: 700;
   font-size: 40px;
-  width: 400px;
 }
 
 .search-icon {
   position: absolute;
   left: 240px;
-  top: 100px;
+  top: 20px;
 }
 
 .sidebar-btn-icon {
@@ -88,11 +104,10 @@ h1 {
 .sidebar-info-text {
   display: inline-block;
   width: 50%;
-  margin-top: 20px;
-  margin-bottom: 0px;
   color: black;
   font-weight: 600;
-  
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .logo-radium {
@@ -104,6 +119,10 @@ h1 {
   object-fit: contain;
 }
 
+.splash-section {
+  text-align: center;
+}
+
 .splash-section img {
   width: 852px;
   height: 356px;
@@ -112,4 +131,9 @@ h1 {
 .splash-section h2, .splash-section p {
   color: #423C3C;
   font-weight: 700;
+}
+
+.splash-section p {
+  width: 60%;
+  margin: 0 auto;
 }
