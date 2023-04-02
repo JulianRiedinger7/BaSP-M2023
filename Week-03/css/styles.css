@@ -244,7 +244,8 @@ h1 {
 
 .memberships-section article h3 {
   display: inline-block;
-  padding: 9px 60px;
+  padding: 9px 0px;
+  width: 311px;
   font-size: 20px;
   font-weight: 700;
   border-radius: 5px;
@@ -276,13 +277,14 @@ footer a {
   text-decoration: none;
 }
 
-footer p, footer span {
-  font-weight: 500;
-  font-size: 14px;
+footer div {
+  display: inline-block;
 }
 
 footer p {
   margin-top: 0;
-  margin-right: 10px;
-  text-align: right;
+  margin-bottom: 0;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
 }
