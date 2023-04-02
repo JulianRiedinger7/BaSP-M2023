@@ -100,6 +100,7 @@ h1 {
 
 .sidebar-info-icon {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .sidebar-info-text {
@@ -120,7 +121,7 @@ h1 {
   object-fit: contain;
 }
 
-.splash-section, .features-section, .form-section {
+.splash-section, .features-section, .form-section, .memberships-section {
   text-align: center;
 }
 
@@ -229,4 +230,59 @@ h1 {
   text-align: center;
   font-weight: 700;
   font-size: 16px;
+}
+
+.memberships-section article ul {
+  padding-left: 0;
+}
+
+.memberships-section article ul li {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 35px 0px;
+}
+
+.memberships-section article h3 {
+  display: inline-block;
+  padding: 9px 60px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+#membership-black h3 {
+  background-color: #2A2A32;
+  color: white;
+}
+
+#membership-classic h3 {
+  background-color: #CCCBCB;
+  color: black;
+}
+
+#membership-classes h3 {
+  background-color: #EDEDED;
+  color: black;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+footer a {
+  padding: 0px 30px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+footer p, footer span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+footer p {
+  margin-top: 0;
+  margin-right: 10px;
+  text-align: right;
 }
