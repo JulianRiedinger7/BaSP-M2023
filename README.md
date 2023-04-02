@@ -1,6 +1,10 @@
 # Week 01
 
-In this week i have worked alongside my team to create the screenflow of Mega Rocket SA gym in Figma. I worked mainly in the admin section.
+In this week i have worked alongside my team to create the screenflow of Mega Rocket SA gym in Figma. These are the Features:
+
+- I worked on the Admin entity.
+- Created prototypes for all screens.
+- Reused components
 
 ![Admin Screenflow](https://user-images.githubusercontent.com/90704238/227729516-9a63fcdd-a4a8-4a30-8746-c04baf1ebf07.png)
 
@@ -8,7 +12,11 @@ In this week i have worked alongside my team to create the screenflow of Mega Ro
 
 
 # Week 02
-In this week i used HTML and images from Figma to recreate the landing page of Mega Rocket SA. I also used Git and Github to upload the content. The next objective is to add styles to this web.
+In this week i used HTML and images from Figma to recreate the landing page of Mega Rocket SA. These are the features:
+
+- I used Git and Github to upload the content.
+- Only structure based on Figma.
+- Used the maximum possible of semantic HTML.
 
 ![Landing screenshot](https://user-images.githubusercontent.com/90704238/227729201-54f3e621-ac4b-4745-b138-68272d1264cb.png)
 
