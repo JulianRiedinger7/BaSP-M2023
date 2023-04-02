@@ -12,6 +12,18 @@ In this week i used HTML and images from Figma to recreate the landing page of M
 
 ![Landing screenshot](https://user-images.githubusercontent.com/90704238/227729201-54f3e621-ac4b-4745-b138-68272d1264cb.png)
 
+# Week 03
+
+In this week i used CSS to style the landing page of the previous week. These are the features:
+
+- The landing is made pixel perfect, which means that there is no responsiveness. 
+- I mustn't use flexbox or grid.
+- I used normalize.css to reset the css in each browser.
+
+![week-03](https://user-images.githubusercontent.com/90704238/229373933-7dbc315b-69d5-4b7d-bb2f-fb86849bdb99.png)
+
+
+
 ---
 By: Julian Riedinger
 ---
