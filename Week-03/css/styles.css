@@ -124,6 +124,15 @@ h1 {
   object-fit: contain;
 }
 
+.separator {
+  width: 45%;
+  margin: 0 auto;
+  padding: 2px;
+  margin-bottom: 50px;
+  background-color: #BEBEBE;
+  text-align: center;
+}
+
 .splash-section, .features-section, .form-section, .memberships-section {
   text-align: center;
 }
@@ -169,6 +178,10 @@ h1 {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
+}
+
+.form-section {
+  margin-bottom: 50px;
 }
 
 .form-section form div {
@@ -231,6 +244,7 @@ h1 {
   background-color: rgba(170, 206, 155, 0.25);
   border-radius: 5px;
   font-size: 20px;
+  line-height: 30px;
 }
 
 .activity-container {
