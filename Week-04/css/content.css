@@ -2,7 +2,7 @@
   display: none;
 }
 
-.splash-section {
+.splash-section, .features-section {
   align-items: center;
   gap: 50px;
 }
@@ -36,7 +36,20 @@
 
 .splash-section h2, .splash-section p {
   color: #423C3C;
-  font-weight: 700;
 }
 
+.features-section article {
+  align-items: center;
+}
+
+.features-section article img {
+  width: 153px;
+  height: 140px;
+  object-fit: contain;
+}
+
+
+.features-section article p{
+  display: none;
+}
 
