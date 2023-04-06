@@ -1,1 +1,42 @@
+.logo-radium {
+  display: none;
+}
+
+.splash-section {
+  align-items: center;
+  gap: 50px;
+}
+
+.splash-section h1 {
+  order: 1;
+  width: 70%;
+  color: #373867;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.splash-section img {
+  order: 0;
+  width: 223px;
+  height: 189px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.splash-section h2 {
+  order: 2;
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.splash-section p {
+  order: 3;
+  width: 70%;
+}
+
+.splash-section h2, .splash-section p {
+  color: #423C3C;
+  font-weight: 700;
+}
+
 

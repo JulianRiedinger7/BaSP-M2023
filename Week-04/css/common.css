@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  color: #373867;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.separator {
+  width: 65%;
+  margin: 0 auto;
+  padding: 2px;
+  margin-bottom: 50px;
+  background-color: #BEBEBE;
+  text-align: center;
+}
+
+.splash-section, .features-section, .form-section, .about-section, .activity-section, .memberships-section {
+  min-height: 100vh;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
