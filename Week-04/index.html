@@ -138,24 +138,26 @@
         <h2 class="section-title">
           Registration and/or claim
         </h2>
-        <form>
-          <div>
-            <label for="name" class="form-label">
-              Name
-            </label>
-            <input type="text" name="name" class="form-input">
-          </div>
-          <div>
-            <label for="lastname" class="form-label">
-              Lastname
-            </label>
-            <input type="text" name="lastname" class="form-input" >
-          </div>
-          <div>
-            <label for="email" class="form-label">
-              Email
-            </label>
-            <input type="email" name="email" class="form-input">
+        <form class="flex-column">
+          <div class="top-form">
+            <div>
+              <label for="name" class="form-label text-center">
+                Name
+              </label>
+              <input type="text" name="name" class="form-input">
+            </div>
+            <div>
+              <label for="lastname" class="form-label text-center">
+                Lastname
+              </label>
+              <input type="text" name="lastname" class="form-input" >
+            </div>
+            <div>
+              <label for="email" class="form-label text-center">
+                Email
+              </label>
+              <input type="email" name="email" class="form-input">
+            </div>
           </div>
           <div>
             <input type="radio" name="option" >
@@ -179,7 +181,7 @@
             <label for="comments" class="form-label" id="comments">
               Comments
             </label>
-            <textarea name="comments" cols="50" rows="10"></textarea>
+            <textarea name="comments" cols="50" rows="10" placeholder="Here"></textarea>
           </div>
           <button type="submit" class="form-send-btn">
             Send
