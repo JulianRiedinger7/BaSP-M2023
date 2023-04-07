@@ -191,3 +191,104 @@
   margin-top: 20px;
   object-fit: contain;
 }
+
+
+@media screen and (min-width: 600px) {
+  .footer .logo-radium {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+
+  .splash-section {
+    gap: 30px;
+  }
+
+  .splash-section h1 {
+    order: 0;
+    margin-top: 50px;
+  }
+  
+  .splash-section img {
+    order: 3;
+    width: 60%;
+  }
+  
+  .splash-section h2 {
+    order: 1;
+    font-size: 1.5rem;
+  }
+  
+  .splash-section p {
+    order: 2;
+  }
+
+  .features-section, .form-section, .about-section, .activity-section, .memberships-section {
+    align-items: center;
+  }
+
+  .features-section article {
+    justify-content: center;
+  }
+
+  .features-section article:nth-of-type(1) {
+    padding-right: 50px;
+  }
+
+  .form-section form {
+    align-items: center;
+    gap: 50px;
+  }
+
+  .form-section label {
+    text-align: left;
+  }
+
+  #form-radio-container {
+    margin-right: 130px;
+  }
+
+  .about-section {
+    justify-content: space-evenly;
+  }
+
+  .about-section p {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 70%;
+    height: 300px;
+  }
+
+  .activity-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .activity-container img {
+    width: 70%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .memberships-section article {
+    width: 65%;
+  }
+
+  .footer {
+    gap: 30px;
+  }
+
+  .footer a img {
+    width: 25px;
+    height: 25px;
+  }
+}
