@@ -13,8 +13,8 @@
 
 .splash-section img {
   order: 0;
-  width: 223px;
-  height: 189px;
+  width: 70%;
+  height: 190px;
   border-radius: 5px;
   object-fit: cover;
 }
@@ -203,7 +203,7 @@
   
   .splash-section img {
     order: 3;
-    width: 60%;
+    height: auto;
   }
   
   .splash-section h2 {
