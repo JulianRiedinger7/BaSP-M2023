@@ -30,6 +30,21 @@ In this week i used CSS to style the landing page of the previous week. These ar
 
 ![week-03](https://user-images.githubusercontent.com/90704238/229373933-7dbc315b-69d5-4b7d-bb2f-fb86849bdb99.png)
 
+# Week 04
+
+In this week i used Responsive CSS to adapt the landing page into mobile, table and desktop sizes.
+
+These are the features:
+ 
+- Developed using mobile first
+- Layout using Flexbox
+- Position of elements mainly using Flexbox
+- CSS modularization in different style files
+- Deploy in Github Pages
+
+[Click here to see the web](https://julianriedinger7.github.io/BaSP-M2023/Week-04/)
+
+![Week 04 mobile](https://user-images.githubusercontent.com/90704238/230983388-645325c7-2173-4546-834d-6de0c7726b2e.png)
 
 
 ---
