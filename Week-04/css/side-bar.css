@@ -1,3 +1,80 @@
 aside {
   display: none;
 }
+
+@media screen and (min-width: 1024px) {
+  aside {
+    display: block;
+    position: fixed;
+    max-width: 320px;
+    height: 100vh;
+    padding: 10px 0;
+    background-color: #F6F6F6;
+    text-align: center;
+  }
+
+  aside input {
+    width: 70%;
+    margin-bottom: 15px;
+    padding: 10px 0px 10px 16px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  aside h3 {
+    margin: 70px 0px 20px 0px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+  }
+
+  aside nav ul {
+    gap: 30px;
+  }
+
+  aside nav ul li {
+    align-items: center;
+    gap: 20px;
+    padding-left: 5px;
+  }
+
+  .sidebar-btn-icon {
+    width: 44px;
+    height: 29px;
+    object-fit: contain;
+  }
+
+  .sidebar-btn {
+    width: 70%;
+    padding: 10px 67px;
+    background-color: #AACE9B;
+    border: none;
+    border-radius: 10px;
+    color: #2A2A32;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .sidebar-info-icon {
+    width: 30px;
+    height: 30px;
+    padding-left: 20px;
+    object-fit: contain;
+  }
+
+  .sidebar-info-text {
+    width: 50%;
+    margin: 0;
+    padding: 17px 0;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
