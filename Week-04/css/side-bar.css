@@ -4,16 +4,20 @@ aside {
 
 @media screen and (min-width: 1024px) {
   aside {
-    display: block;
-    position: fixed;
-    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    left: 0;
+    top: 80px;
+    max-width: 335px;
     height: 100vh;
-    padding: 10px 0;
+    padding: 10px;
     background-color: #F6F6F6;
     text-align: center;
   }
 
   aside input {
+    align-self: center;
     width: 70%;
     margin-bottom: 15px;
     padding: 10px 0px 10px 16px;
@@ -29,7 +33,7 @@ aside {
 
   .search-icon {
     position: absolute;
-    left: 230px;
+    left: 215px;
     top: 20px;
   }
 
@@ -50,7 +54,7 @@ aside {
   }
 
   .sidebar-btn {
-    width: 70%;
+    width: 80%;
     padding: 10px 67px;
     background-color: #AACE9B;
     border: none;
