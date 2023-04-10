@@ -1,6 +1,8 @@
 # Week 01
 
-In this week i have worked alongside my team to create the screenflow of Mega Rocket SA gym in Figma. These are the Features:
+In this week i have worked alongside my team to create the screenflow of Mega Rocket SA gym in Figma. T
+
+## Features:
 
 - I worked on the Admin entity.
 - Created prototypes for all screens.
@@ -12,7 +14,9 @@ In this week i have worked alongside my team to create the screenflow of Mega Ro
 
 
 # Week 02
-In this week i used HTML and images from Figma to recreate the landing page of Mega Rocket SA. These are the features:
+In this week i used HTML and images from Figma to recreate the landing page of Mega Rocket SA.
+
+## Features:
 
 - I used Git and Github to upload the content.
 - Only structure based on Figma.
@@ -22,7 +26,9 @@ In this week i used HTML and images from Figma to recreate the landing page of M
 
 # Week 03
 
-In this week i used CSS to style the landing page of the previous week. These are the features:
+In this week i used CSS to style the landing page of the previous week.
+
+## Features:
 
 - The landing is made pixel perfect, which means that there is no responsiveness. 
 - I mustn't use flexbox or grid.
@@ -34,7 +40,7 @@ In this week i used CSS to style the landing page of the previous week. These ar
 
 In this week i used Responsive CSS to adapt the landing page into mobile, table and desktop sizes.
 
-These are the features:
+## Features:
  
 - Developed using mobile first
 - Layout using Flexbox
