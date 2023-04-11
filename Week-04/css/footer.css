@@ -1,0 +1,33 @@
+.footer {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+.footer a img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.footer div p {
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    gap: 30px;
+  }
+
+  .footer a img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    margin-left: 20%;
+  }
+}
