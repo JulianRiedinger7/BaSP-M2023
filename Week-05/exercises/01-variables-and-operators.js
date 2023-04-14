@@ -29,8 +29,8 @@ console.log(nombreCompleto);
 
 console.log('\n-Exercise 1.c');
 
-var nombre = 'Julian'
-var apellido = 'Riedinger'
-var longitudNombreApellido = nombre.length + apellido.length
+var nombre = 'Julian';
+var apellido = 'Riedinger';
+var longitudNombreApellido = nombre.length + apellido.length;
 
-console.log('Longitud de nombre + longitud de apellido ', longitudNombreApellido)
+console.log('Longitud de nombre + longitud de apellido ', longitudNombreApellido);
