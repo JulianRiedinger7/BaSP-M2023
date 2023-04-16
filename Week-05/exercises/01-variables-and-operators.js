@@ -18,19 +18,19 @@ console.log("El resultado de " +num1+ " + "+num2+ " es ",num3);
 console.log('\n-Exercise 1.b');
 
 
-var nombre = 'Julian';
-var apellido = 'Riedinger';
-var nombreCompleto = nombre + ' ' + apellido;
+var firstName = 'Julian';
+var surname = 'Riedinger';
+var fullName = firstName + ' ' + surname;
 
-console.log(nombreCompleto);
+console.log(fullName);
 
 //c. Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando
 //  el resultado de la suma en una 3er variable (utilizar length).
 
 console.log('\n-Exercise 1.c');
 
-var nombre = 'Julian';
-var apellido = 'Riedinger';
-var longitudNombreApellido = nombre.length + apellido.length;
+var firstName = 'Julian';
+var surname = 'Riedinger';
+var fullNameLength = firstName.length + surname.length;
 
-console.log('Longitud de nombre + longitud de apellido ', longitudNombreApellido);
+console.log('Longitud de nombre + longitud de apellido ', fullNameLength);
