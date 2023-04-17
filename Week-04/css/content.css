@@ -1,4 +1,5 @@
-.splash-section, .features-section {
+.splash-section,
+.features-section {
   align-items: center;
   gap: 50px;
 }
@@ -13,8 +14,8 @@
 
 .splash-section img {
   order: 0;
-  width: 70%;
-  height: 190px;
+  width: 60vw;
+  height: auto;
   border-radius: 5px;
   object-fit: cover;
 }
@@ -30,7 +31,8 @@
   width: 70%;
 }
 
-.splash-section h2, .splash-section p {
+.splash-section h2,
+.splash-section p {
   color: #423C3C;
 }
 
@@ -41,12 +43,12 @@
 }
 
 .features-section article img {
-  width: 153px;
-  height: 140px;
+  width: 30vw;
+  height: auto;
   object-fit: contain;
 }
 
-.features-section article p{
+.features-section article p {
   display: none;
 }
 
@@ -111,7 +113,7 @@
 .about-section p {
   width: 50%;
   padding: 20px 30px;
-  background-color: rgba(170, 206, 155,0.3);
+  background-color: rgba(170, 206, 155, 0.3);
   line-height: 1.5;
   font-weight: 500;
 }
@@ -127,8 +129,8 @@
 }
 
 .activity-container img {
-  width: 170px;
-  height: 110px;
+  width: 40vw;
+  height: auto;
   border-radius: 5px;
   object-fit: cover;
 }
@@ -182,27 +184,34 @@
     order: 0;
     margin-top: 50px;
   }
-  
+
   .splash-section img {
     order: 3;
-    height: auto;
   }
-  
+
   .splash-section h2 {
     order: 1;
     font-size: 1.5rem;
   }
-  
+
   .splash-section p {
     order: 2;
   }
 
-  .features-section, .form-section, .about-section, .activity-section, .memberships-section {
+  .features-section,
+  .form-section,
+  .about-section,
+  .activity-section,
+  .memberships-section {
     align-items: center;
   }
 
   .features-section article {
     justify-content: center;
+  }
+
+  .features-section article img {
+    width: 20vw;
   }
 
   .features-section article:nth-of-type(1) {
@@ -229,7 +238,7 @@
   .about-section p {
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     width: 70%;
     height: 300px;
   }
@@ -240,8 +249,8 @@
   }
 
   .activity-container img {
-    width: 70%;
-    height: 180px;
+    width: 50vw;
+    height: 200px;
     object-fit: cover;
   }
 
@@ -261,17 +270,17 @@
     order: 0;
     width: 35%;
   }
-  
+
   .splash-section img {
+    width: 50vw;
     order: 1;
-    height: 300px;
     object-fit: contain;
   }
-  
+
   .splash-section h2 {
     order: 2;
   }
-  
+
   .splash-section p {
     order: 3;
     width: 45%;
@@ -289,7 +298,7 @@
     width: 40%;
   }
 
-  .features-section article h3{
+  .features-section article h3 {
     text-align: center;
   }
 
@@ -304,14 +313,13 @@
   }
 
   .features-section article img {
-    width: 250px;
-    height: 200px;
+    width: 12vw;
   }
 
   .form-section .top-form {
     width: 30%;
   }
-  
+
   .form-section .top-form input {
     padding: 10px;
   }
@@ -327,7 +335,7 @@
   .about-section p {
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     width: 45%;
     height: 300px;
   }
@@ -357,7 +365,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .memberships-section article h3 {
     width: 50%;
   }

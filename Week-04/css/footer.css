@@ -5,9 +5,9 @@
 }
 
 .footer a img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
+  width: 10vw;
+  height: auto;
+  object-fit: contain;
 }
 
 .footer div p {
@@ -21,13 +21,16 @@
   }
 
   .footer a img {
-    width: 25px;
-    height: 25px;
+    width: 3vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .footer {
     margin-left: 20%;
+  }
+
+  .footer a img {
+    width: 2vw;
   }
 }
