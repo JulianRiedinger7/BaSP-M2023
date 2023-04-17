@@ -52,6 +52,19 @@ In this week i used Responsive CSS to adapt the landing page into mobile, table 
 
 ![Week 04 mobile](https://user-images.githubusercontent.com/90704238/230983388-645325c7-2173-4546-834d-6de0c7726b2e.png)
 
+# Week 05
+
+In this week i resolved Javascript exercises and corrected features of the previoues week.
+
+## Features: 
+
+- Variables and Operators Exercises
+- Strings Exercises
+- Arrays Exercises
+- Conditionals (If-else) Exercises
+- For Loop Exercises
+- Functions Exercises
+
 
 ---
 By: Julian Riedinger
