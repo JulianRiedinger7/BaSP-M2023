@@ -65,6 +65,39 @@ body {
   object-fit: contain;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+form .form-input {
+  padding: 8px;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+
+form fieldset label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+form .form-send {
+  padding: 14px 36px;
+  background-color: #AACE9B;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  align-self: center;
+  transition: .3 ease-in-out;
+  cursor: pointer;
+}
+
+form .form-send:hover {
+  opacity: .9;
+}
+
+
 ul li {
   list-style-type: none;
 }

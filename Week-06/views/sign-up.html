@@ -14,11 +14,67 @@
 		<header>
 			<p>Mega Rocket SA</p>
 		</header>
-		<main>
-			<h1>REGISTER</h1>
+		<main class="flex-column">
+			<h1>Register</h1>
 			<a href="./index.html" class="back-arrow">
 				<img src="../../assets/img/icon-back.png" alt="back arrow" />
 			</a>
+			<img
+				src="../../assets/img/logo-rr.png"
+				alt="logo radium rocket"
+				class="logo"
+			/>
+
+			<form class="flex">
+				<fieldset class="flex-column">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="lastname">Lastname</label>
+					<input type="text" name="lastname" id="lastname" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="age">Age</label>
+					<input type="text" name="age" id="age" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="password">Password</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						class="form-input"
+					/>
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="confirm">Confirm Password</label>
+					<input
+						type="password"
+						name="confirm"
+						id="confirm"
+						class="form-input"
+					/>
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="membership">Membership</label>
+					<select name="membership" id="membership" class="form-input">
+						<option value="0">Choose your membership</option>
+						<option value="1">Black</option>
+						<option value="1">Classic</option>
+						<option value="2">Only Classes</option>
+					</select>
+				</fieldset>
+				<button type="submit" class="form-send">Continue</button>
+			</form>
 		</main>
 
 		<script src="../js/sign-up.js"></script>
