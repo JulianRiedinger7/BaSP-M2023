@@ -48,6 +48,16 @@ body {
   top: 100px;
 }
 
+.input-error {
+  border: 2px solid red;
+}
+
+.error-text {
+  margin-top: 5px;
+  color: red;
+  font-size: .8rem;
+}
+
 .splash-section,
 .features-section,
 .form-section,
