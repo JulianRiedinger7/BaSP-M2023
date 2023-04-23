@@ -12,18 +12,16 @@ main {
 }
 
 form {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 70%;
+  flex-direction: column;
   gap: 30px;
-  min-height: 300px;
   padding: 50px 100px;
   border-radius: 40px;
   box-shadow: 0px 20px 20px -2px rgba(0, 0, 0, 0.05);
 }
 
 form fieldset {
-  width: 35%;
+  width: 100%;
+  position: relative;
 }
 
 form .form-input {
@@ -31,5 +29,22 @@ form .form-input {
 }
 
 form .form-send {
-  width: 25%;
+  width: 75%;
+}
+
+@media screen and (min-width: 1024px) {
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  form fieldset {
+    width: 35%;
+  }
+
+  form .form-send {
+    width: 25%;
+  }
 }

@@ -49,6 +49,14 @@ function addInputError(input, message) {
 	)
 }
 
+function removeInputError(input) {
+	input.classList.remove('input-error')
+	const errorSpan = input.nextElementSibling
+	if (errorSpan && errorSpan.classList.contains('error-text')) {
+		errorSpan.parentElement.removeChild(errorSpan)
+	}
+}
+
 emailInput.addEventListener('blur', () => {
 	const value = emailInput.value
 	if (value === '') {
@@ -64,13 +72,7 @@ emailInput.addEventListener('blur', () => {
 	}
 })
 
-emailInput.addEventListener('focus', () => {
-	emailInput.classList.remove('input-error')
-	const errorSpan = emailInput.nextElementSibling
-	if (errorSpan && errorSpan.classList.contains('error-text')) {
-		errorSpan.parentElement.removeChild(errorSpan)
-	}
-})
+emailInput.addEventListener('focus', () => removeInputError(emailInput))
 
 passInput.addEventListener('blur', () => {
 	const value = passInput.value
@@ -85,13 +87,7 @@ passInput.addEventListener('blur', () => {
 	}
 })
 
-passInput.addEventListener('focus', () => {
-	passInput.classList.remove('input-error')
-	const errorSpan = passInput.nextElementSibling
-	if (errorSpan && errorSpan.classList.contains('error-text')) {
-		errorSpan.parentElement.removeChild(errorSpan)
-	}
-})
+passInput.addEventListener('focus', () => removeInputError(passInput))
 
 form.addEventListener('submit', (evt) => {
 	evt.preventDefault()
