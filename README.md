@@ -65,6 +65,20 @@ In this week i resolved Javascript exercises and corrected features of the previ
 - For Loop Exercises
 - Functions Exercises
 
+# Week 06
+
+In this week i created a login and signup page with validations
+
+## Features:
+
+- CSS Flexbox for login/signup
+- Connection between landing/login/signup
+- Javascript only validations
+- Requirements Document with inputs specifications
+
+[Click here to see the web](https://julianriedinger7.github.io/BaSP-M2023/Week-06/Views)
+
+![Screenshot 2023-04-24 203552](https://user-images.githubusercontent.com/90704238/234137960-396c02af-5cd7-46c7-8d14-19527c5ad554.png)
 
 ---
 By: Julian Riedinger
