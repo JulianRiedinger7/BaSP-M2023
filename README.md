@@ -76,9 +76,10 @@ In this week i created a login and signup page with validations
 - Javascript only validations
 - Requirements Document with inputs specifications
 
-[Click here to see the web](https://julianriedinger7.github.io/BaSP-M2023/Week-06/Views)
+[Click here to see the web](https://julianriedinger7.github.io/BaSP-M2023/Week-06/views)
 
-![Screenshot 2023-04-24 203552](https://user-images.githubusercontent.com/90704238/234137960-396c02af-5cd7-46c7-8d14-19527c5ad554.png)
+![Screenshot 2023-04-24 204136](https://user-images.githubusercontent.com/90704238/234138560-ebd830ee-ad93-4d1b-a9df-eceac9e84367.png)
+
 
 ---
 By: Julian Riedinger
