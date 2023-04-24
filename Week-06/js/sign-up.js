@@ -11,7 +11,35 @@ const locationInput = document.querySelector('#location')
 const postalInput = document.querySelector('#postal')
 const dateInput = document.querySelector('#date')
 const emailExpression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const notValidCharacters = ['#', '!', '?', '%', '$', '&', '[', ']', ' ']
+const notValidEmailChars = [
+	'!',
+	'#',
+	'$',
+	'%',
+	'^',
+	'&',
+	'*',
+	'(',
+	')',
+	'-',
+	'+',
+	'=',
+	'{',
+	'}',
+	'[',
+	']',
+	'|',
+	'\\',
+	';',
+	':',
+	"'",
+	'"',
+	'<',
+	'>',
+	',',
+	'/',
+	'?',
+]
 const inputsArray = [
 	nameInput,
 	emailInput,
@@ -116,11 +144,7 @@ function amountOfLetters(userInput) {
 	for (let i = 0; i < userInput.length; i++) {
 		const charCode = userInput.charCodeAt(i)
 		if (
-			!(
-				(charCode < 65 || charCode > 90) &&
-				(charCode < 97 || charCode > 122) &&
-				charCode !== 32
-			)
+			!((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122))
 		) {
 			quantity += 1
 		}
@@ -185,7 +209,7 @@ emailInput.addEventListener('blur', () => {
 		addInputError(emailInput, 'Field is required')
 	} else if (!isPattern(value)) {
 		addInputError(emailInput, 'It`s not a valid email format')
-	} else if (!validCharacters(value, notValidCharacters)) {
+	} else if (!validCharacters(value, notValidEmailChars)) {
 		addInputError(emailInput, 'Contains not valid characters')
 	} else if (!validateLength(value, 10, 50)) {
 		addInputError(emailInput, 'Length is not valid')
@@ -200,12 +224,14 @@ passInput.addEventListener('blur', () => {
 	const value = passInput.value
 	if (value.trim() === '') {
 		addInputError(passInput, 'Field is required')
-	} else if (!validCharacters(value, notValidCharacters)) {
+	} else if (!isAlphanumeric(value) || value.includes(' ')) {
 		addInputError(passInput, 'Contains not valid characters')
 	} else if (!validateLength(value, 8, 50)) {
 		addInputError(passInput, 'Length is not valid')
 	} else if (!validateUppercase(value)) {
 		addInputError(passInput, 'Should at least contain one uppercase letter')
+	} else if (amountOfNumbers(value) === 0) {
+		addInputError(passInput, 'Should at least contain one number')
 	}
 })
 
@@ -256,10 +282,13 @@ addressInput.addEventListener('focus', () => removeInputError(addressInput))
 
 dateInput.addEventListener('blur', () => {
 	const value = dateInput.value
-	const year = value.substring(0, 4)
-	const currentYear = 2023
+	const dateArray = value.split('-')
+	const year = dateArray[0]
+	const currentYear = new Date().getFullYear()
 	if (value.trim() === '') {
 		addInputError(dateInput, 'Field is required')
+	} else if (parseInt(year) >= currentYear) {
+		addInputError(dateInput, `Year should be less than ${currentYear}`)
 	} else if (currentYear - parseInt(year) < 16) {
 		addInputError(dateInput, 'You should have at least 16 years old')
 	}
@@ -322,10 +351,10 @@ form.addEventListener('submit', (evt) => {
 		alertError += `${span.previousElementSibling.name}: ${span.textContent} \n`
 	})
 	inputsArray.forEach((input) => {
-		if (input.value === '') {
+		if (input.value === '' && alertError === '') {
 			return (alertError = 'All inputs are required')
 		} else {
-			alertConfirm += `${input.name}: ${input.value}`
+			alertConfirm += `${input.name}: ${input.value} \n`
 		}
 	})
 	if (alertError !== '') {
