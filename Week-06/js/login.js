@@ -91,26 +91,16 @@ passInput.addEventListener('focus', () => removeInputError(passInput))
 
 form.addEventListener('submit', (evt) => {
 	evt.preventDefault()
-	const formData = new FormData(form)
-	const email = formData.get('email')
-	const pass = formData.get('password')
-	if (email === '' || pass === '') {
-		alert('Both fields are required')
-	} else if (!isPattern(email)) {
-		alert('The email format is not valid')
-	} else if (!validCharacters(email, notValidCharacters)) {
-		alert('The email is using not valid characters')
-	} else if (!validateLength(email, 10, 50)) {
-		alert('The email length is not valid')
-	} else if (!beforeDomainValid(email)) {
-		alert('The email should contain more characters before @')
-	} else if (!validCharacters(pass, notValidCharacters)) {
-		alert('The password is using not valid characters')
-	} else if (!validateLength(pass, 8, 50)) {
-		alert('The password length is not valid')
-	} else if (!validateUppercase(pass)) {
-		alert('The password should at least contain one uppercase letter')
+	const errorSpans = document.querySelectorAll('.error-text')
+	let alertError = ''
+	errorSpans.forEach((span) => {
+		alertError += `${span.previousElementSibling.name}: ${span.textContent} \n`
+	})
+	if (alertError !== '') {
+		alert(alertError)
+	} else if (emailInput.value === '' || passInput.value === '') {
+		alert('All inputs are required')
 	} else {
-		alert(`Email: ${email} \n Password: ${pass}`)
+		alert(`Email: ${emailInput.value} \n Password: ${passInput.value}`)
 	}
 })

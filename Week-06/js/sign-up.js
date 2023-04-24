@@ -1,3 +1,4 @@
+const form = document.querySelector('form')
 const nameInput = document.querySelector('#name')
 const emailInput = document.querySelector('#email')
 const passInput = document.querySelector('#password')
@@ -11,6 +12,19 @@ const postalInput = document.querySelector('#postal')
 const dateInput = document.querySelector('#date')
 const emailExpression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const notValidCharacters = ['#', '!', '?', '%', '$', '&', '[', ']', ' ']
+const inputsArray = [
+	nameInput,
+	emailInput,
+	passInput,
+	lastnameInput,
+	confirmInput,
+	dniInput,
+	addressInput,
+	phoneInput,
+	locationInput,
+	postalInput,
+	dateInput,
+]
 
 function isPattern(userInput) {
 	return emailExpression.test(userInput)
@@ -298,3 +312,25 @@ postalInput.addEventListener('blur', () => {
 })
 
 postalInput.addEventListener('focus', () => removeInputError(postalInput))
+
+form.addEventListener('submit', (evt) => {
+	evt.preventDefault()
+	const errorSpans = document.querySelectorAll('.error-text')
+	let alertError = ''
+	let alertConfirm = ''
+	errorSpans.forEach((span) => {
+		alertError += `${span.previousElementSibling.name}: ${span.textContent} \n`
+	})
+	inputsArray.forEach((input) => {
+		if (input.value === '') {
+			return (alertError = 'All inputs are required')
+		} else {
+			alertConfirm += `${input.name}: ${input.value}`
+		}
+	})
+	if (alertError !== '') {
+		alert(alertError)
+	} else {
+		alert(alertConfirm)
+	}
+})
