@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+		<title>Login</title>
+	</head>
+	<body>
+		<header>
+			<p>Mega Rocket SA</p>
+		</header>
+		<main class="flex-column">
+			<h1>Log In</h1>
+			<a href="./index.html" class="back-arrow">
+				<img src="../../assets/img/icon-back.png" alt="back arrow" />
+			</a>
+			<img
+				src="../../assets/img/logo-rr.png"
+				alt="logo radium rocket"
+				class="logo"
+			/>
+			<form class="flex-column">
+				<fieldset class="flex-column">
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="password">Password</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						class="form-input"
+					/>
+				</fieldset>
+				<fieldset class="flex form-check-container">
+					<div>
+						<input type="radio" name="checkbox" id="checkbox" />
+						<span>Remember me</span>
+					</div>
+					<a class="form-link" href="#">Forgot password?</a>
+				</fieldset>
+				<button type="submit" class="form-send">Continue</button>
+				<p>
+					Are you new here?
+					<a class="form-link" href="./sign-up.html">Register</a>
+				</p>
+			</form>
+		</main>
+
+		<script src="../js/login.js"></script>
+	</body>
+</html>

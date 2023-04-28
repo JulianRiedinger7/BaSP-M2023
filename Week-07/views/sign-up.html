@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/sign-up.css" />
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<header>
+			<p>Mega Rocket SA</p>
+		</header>
+		<main class="flex-column">
+			<h1>Register</h1>
+			<a href="./index.html" class="back-arrow">
+				<img src="../../assets/img/icon-back.png" alt="back arrow" />
+			</a>
+			<img
+				src="../../assets/img/logo-rr.png"
+				alt="logo radium rocket"
+				class="logo"
+			/>
+
+			<form class="flex">
+				<fieldset class="flex-column">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="lastname">Lastname</label>
+					<input type="text" name="lastname" id="lastname" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="password">Password</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						class="form-input"
+					/>
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="confirm">Confirm Password</label>
+					<input
+						type="password"
+						name="confirm"
+						id="confirm"
+						class="form-input"
+					/>
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="dni">DNI</label>
+					<input type="text" name="dni" id="dni" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="date">Birthdate</label>
+					<input type="date" name="date" id="date" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="phone">Phone</label>
+					<input type="text" name="phone" id="phone" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="location">Location</label>
+					<input type="text" name="location" id="location" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="postal">Postal Code</label>
+					<input type="text" name="postal" id="postal" class="form-input" />
+				</fieldset>
+				<fieldset class="flex-column">
+					<label for="membership">Membership</label>
+					<select name="membership" id="membership" class="form-input">
+						<option value="0">Choose your membership</option>
+						<option value="1">Black</option>
+						<option value="1">Classic</option>
+						<option value="2">Only Classes</option>
+					</select>
+				</fieldset>
+				<div class="flex-column">
+					<button type="submit" class="form-send">Continue</button>
+					<p>Already have an account? <a href="./login.html">Login</a></p>
+				</div>
+			</form>
+		</main>
+
+		<script src="../js/sign-up.js"></script>
+	</body>
+</html>
