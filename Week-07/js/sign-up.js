@@ -2,14 +2,14 @@ const form = document.querySelector('form')
 const nameInput = document.querySelector('#name')
 const emailInput = document.querySelector('#email')
 const passInput = document.querySelector('#password')
-const lastnameInput = document.querySelector('#lastname')
+const lastnameInput = document.querySelector('#lastName')
 const confirmInput = document.querySelector('#confirm')
 const dniInput = document.querySelector('#dni')
 const addressInput = document.querySelector('#address')
 const phoneInput = document.querySelector('#phone')
-const locationInput = document.querySelector('#location')
-const postalInput = document.querySelector('#postal')
-const dateInput = document.querySelector('#date')
+const locationInput = document.querySelector('#city')
+const postalInput = document.querySelector('#zip')
+const dateInput = document.querySelector('#dob')
 const emailExpression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const notValidEmailChars = [
 	'!',
@@ -289,8 +289,6 @@ dateInput.addEventListener('blur', () => {
 		addInputError(dateInput, 'Field is required')
 	} else if (parseInt(year) >= currentYear) {
 		addInputError(dateInput, `Year should be less than ${currentYear}`)
-	} else if (currentYear - parseInt(year) < 16) {
-		addInputError(dateInput, 'You should have at least 16 years old')
 	}
 })
 
@@ -342,24 +340,50 @@ postalInput.addEventListener('blur', () => {
 
 postalInput.addEventListener('focus', () => removeInputError(postalInput))
 
+function sendFormData() {
+	const url = 'https://api-rest-server.vercel.app/signup'
+	const formData = new FormData(form)
+	const queryParams = new URLSearchParams(formData)
+	queryParams.delete('dob')
+	const dateArray = dateInput.value.split('-')
+	const updatedQueryParams =
+		queryParams.toString() +
+		`&dob=${dateArray[1]}/${dateArray[2]}/${dateArray[0]}`
+	fetch(`${url}?${updatedQueryParams}`)
+		.then((res) => res.json())
+		.then((data) => {
+			console.log(data)
+			console.log('data', data.data)
+			const userData = data.data
+			if (data.success) {
+				for (const field in userData) {
+					localStorage.setItem(`${field}`, `${userData[field]}`)
+				}
+				alert(`Success: ${data.msg}`)
+			} else {
+				throw new Error(data.msg)
+			}
+		})
+		.catch((err) => {
+			alert(err)
+		})
+}
+
 form.addEventListener('submit', (evt) => {
 	evt.preventDefault()
 	const errorSpans = document.querySelectorAll('.error-text')
 	let alertError = ''
-	let alertConfirm = ''
 	errorSpans.forEach((span) => {
 		alertError += `${span.previousElementSibling.name}: ${span.textContent} \n`
 	})
 	inputsArray.forEach((input) => {
 		if (input.value === '' && alertError === '') {
 			return (alertError = 'All inputs are required')
-		} else {
-			alertConfirm += `${input.name}: ${input.value} \n`
 		}
 	})
 	if (alertError !== '') {
 		alert(alertError)
 	} else {
-		alert(alertConfirm)
+		sendFormData()
 	}
 })
