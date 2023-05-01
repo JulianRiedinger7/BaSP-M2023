@@ -54,6 +54,19 @@ const inputsArray = [
 	dateInput,
 ]
 
+window.addEventListener('load', () => {
+	if (localStorage.length !== 0) {
+		inputsArray.forEach((input) => {
+			if (input === dateInput) {
+				const dateArray = localStorage.getItem(`${dateInput.name}`).split('/')
+				dateInput.value = `${dateArray[2]}-${dateArray[0]}-${dateArray[1]}`
+			} else {
+				input.value = localStorage.getItem(`${input.name}`)
+			}
+		})
+	}
+})
+
 function isPattern(userInput) {
 	return emailExpression.test(userInput)
 }
@@ -352,20 +365,25 @@ function sendFormData() {
 	fetch(`${url}?${updatedQueryParams}`)
 		.then((res) => res.json())
 		.then((data) => {
-			console.log(data)
-			console.log('data', data.data)
 			const userData = data.data
+			let confirmMsg = ''
 			if (data.success) {
 				for (const field in userData) {
 					localStorage.setItem(`${field}`, `${userData[field]}`)
+					confirmMsg += `${field}: ${userData[field]} \n`
 				}
-				alert(`Success: ${data.msg}`)
+				alert(`Success: ${data.msg} \n${confirmMsg}`)
 			} else {
-				throw new Error(data.msg)
+				throw new Error(JSON.stringify(data.errors))
 			}
 		})
-		.catch((err) => {
-			alert(err)
+		.catch((error) => {
+			const errors = JSON.parse(error.message)
+			let errorMsg = ''
+			errors.forEach((err) => {
+				errorMsg += `${err.msg} \n`
+			})
+			alert(errorMsg)
 		})
 }
 
