@@ -32,11 +32,11 @@ const notValidEmailChars = [
 	'?',
 ]
 
-function isPattern(userInput) {
+const isPattern = (userInput) => {
 	return emailExpression.test(userInput)
 }
 
-function validCharacters(userInput, characters) {
+const validCharacters = (userInput, characters) => {
 	let valid = true
 	characters.forEach((char) => {
 		if (userInput.includes(char)) {
@@ -48,12 +48,12 @@ function validCharacters(userInput, characters) {
 	return valid
 }
 
-function beforeDomainValid(userInput) {
+const beforeDomainValid = (userInput) => {
 	const atSymbol = userInput.indexOf('@')
 	return userInput.substring(0, atSymbol).length >= 3
 }
 
-function validateUppercase(userInput) {
+const validateUppercase = (userInput) => {
 	for (let i = 0; i < userInput.length; i += 1) {
 		if (userInput[i] >= 'A' && userInput[i] <= 'Z') {
 			return true
@@ -62,11 +62,11 @@ function validateUppercase(userInput) {
 	return false
 }
 
-function validateLength(userInput, min, max) {
+const validateLength = (userInput, min, max) => {
 	return userInput.length >= min && userInput.length <= max
 }
 
-function amountOfNumbers(userInput) {
+const amountOfNumbers = (userInput) => {
 	let quantity = 0
 	for (let i = 0; i < userInput.length; i += 1) {
 		if (!isNaN(parseInt(userInput[i]))) {
@@ -76,7 +76,7 @@ function amountOfNumbers(userInput) {
 	return quantity
 }
 
-function isAlphanumeric(userInput) {
+const isAlphanumeric = (userInput) => {
 	for (let i = 0; i < userInput.length; i++) {
 		const charCode = userInput.charCodeAt(i)
 		const isLetter =
@@ -94,7 +94,7 @@ function isAlphanumeric(userInput) {
 	return true
 }
 
-function addInputError(input, message) {
+const addInputError = (input, message) => {
 	input.classList.add('input-error')
 	if (input.nextElementSibling) {
 		input.nextElementSibling.remove()
@@ -105,7 +105,7 @@ function addInputError(input, message) {
 	)
 }
 
-function removeInputError(input) {
+const removeInputError = (input) => {
 	input.classList.remove('input-error')
 	const errorSpan = input.nextElementSibling
 	if (errorSpan && errorSpan.classList.contains('error-text')) {
@@ -147,7 +147,7 @@ passInput.addEventListener('blur', () => {
 
 passInput.addEventListener('focus', () => removeInputError(passInput))
 
-function sendFormData() {
+const sendFormData = () => {
 	const url = 'https://api-rest-server.vercel.app/login'
 	const formData = new FormData(form)
 	const queryParams = new URLSearchParams(formData).toString()
