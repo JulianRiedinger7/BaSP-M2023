@@ -75,11 +75,7 @@ const validateLength = (userInput, min, max) =>
 const validateLetters = (userInput) => {
 	for (let i = 0; i < userInput.length; i++) {
 		const charCode = userInput.charCodeAt(i)
-		if (
-			(charCode < 65 || charCode > 90) &&
-			(charCode < 97 || charCode > 122) &&
-			charCode !== 32
-		) {
+		if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122)) {
 			return false
 		}
 	}
@@ -264,8 +260,8 @@ dniInput.addEventListener('blur', () => {
 		addInputError(dniInput, 'Field is required')
 	} else if (!validateNumbers(value)) {
 		addInputError(dniInput, 'Should contain only numbers')
-	} else if (!validateLength(value, 8, 10)) {
-		addInputError(dniInput, 'Should have at least 8 numbers and max 10')
+	} else if (!validateLength(value, 7, 8)) {
+		addInputError(dniInput, 'Should have between 7 and 8 numbers')
 	}
 })
 
