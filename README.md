@@ -12,8 +12,8 @@ In this week i have worked alongside my team to create the screenflow of Mega Ro
 
 [Figma Link](https://www.figma.com/file/IGkIxih6STHxdBqnuGYTlR/BaSP-m2023-MegaRocket-Nico?node-id=41-4)
 
-
 # Week 02
+
 In this week i used HTML and images from Figma to recreate the landing page of Mega Rocket SA.
 
 ## Features:
@@ -30,7 +30,7 @@ In this week i used CSS to style the landing page of the previous week.
 
 ## Features:
 
-- The landing is made pixel perfect, which means that there is no responsiveness. 
+- The landing is made pixel perfect, which means that there is no responsiveness.
 - I mustn't use flexbox or grid.
 - I used normalize.css to reset the css in each browser.
 
@@ -41,7 +41,7 @@ In this week i used CSS to style the landing page of the previous week.
 In this week i used Responsive CSS to adapt the landing page into mobile, table and desktop sizes.
 
 ## Features:
- 
+
 - Developed using mobile first
 - Layout using Flexbox
 - Position of elements mainly using Flexbox
@@ -56,7 +56,7 @@ In this week i used Responsive CSS to adapt the landing page into mobile, table 
 
 In this week i resolved Javascript exercises and corrected features of the previoues week.
 
-## Features: 
+## Features:
 
 - Variables and Operators Exercises
 - Strings Exercises
@@ -80,7 +80,23 @@ In this week i created a login and signup page with validations
 
 ![Screenshot 2023-04-24 204136](https://user-images.githubusercontent.com/90704238/234138560-ebd830ee-ad93-4d1b-a9df-eceac9e84367.png)
 
+# Week 07
+
+In this week i created the logic to singup an login an user in the page
+and save the information
+
+## Features:
+
+- Frontend Validations for inputs using JavaScript
+- JavaScript Fetch for the HTTP Request to real API (GET Method)
+- Server validations for wrong/success users
+- LocalStorage to save the information of a new signup user
+- Information filled in signup inputs when page loads
+
+[Click here to see the web](https://julianriedinger7.github.io/BaSP-M2023/Week-07/views/index.html)
+
+![Captura de pantalla 2023-05-02 125951](https://user-images.githubusercontent.com/90704238/235720974-850e1aa3-4a35-411c-84cc-f2a21120638f.png)
 
 ---
-By: Julian Riedinger
----
+
+## By: Julian Riedinger
